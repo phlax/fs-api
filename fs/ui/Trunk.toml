@@ -1,0 +1,6 @@
+
+[build]
+target = "index.html"
+dist = "../api/example/ui"
+public_url = "/ui/"
+filehash = false

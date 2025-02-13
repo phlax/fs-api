@@ -1,0 +1,1746 @@
+
+api:
+  listen:
+    host: 127.0.0.1
+    port: 3000
+  log:
+    level: debug
+
+paths:
+- pattern: ^/favicon.ico$
+  path: img/favicon.ico
+- pattern: ^/api/(?P<path>[a-zA-Z0-9-_./]*)$
+  provider: api
+  path: fs
+- pattern: ^/ui/(?P<path>[a-zA-Z0-9-_./]*)$
+  path: ui
+- pattern: ^/(?P<path>[a-zA-Z0-9-_./]*)$
+  path: fs
+
+root_directory: example
+
+mimetypes:
+- extension: 3dm
+  mimetype: x-world/x-3dmf
+  icon: 🌐
+  description: 3D Metafile
+
+- extension: 3dmf
+  mimetype: x-world/x-3dmf
+  icon: 🌐
+  description: 3D Metafile
+
+- extension: a
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Archive File
+
+- extension: aab
+  mimetype: application/x-authorware-bin
+  icon: 📦
+  description: Adobe Authorware Binary File
+
+- extension: aam
+  mimetype: application/x-authorware-map
+  icon: 🗺️
+  description: Adobe Authorware Map File
+
+- extension: aas
+  mimetype: application/x-authorware-seg
+  icon: 🎞️
+  description: Adobe Authorware Segment File
+
+- extension: abc
+  mimetype: text/vnd.abc
+  icon: 🎼
+  description: ABC Music Notation
+
+- extension: acgi
+  mimetype: text/html
+  icon: 🌐
+  description: HTML File
+
+- extension: afl
+  mimetype: video/animaflex
+  icon: 🎞️
+  description: Animaflex Video File
+
+- extension: ai
+  mimetype: application/postscript
+  icon: 🖼️
+  description: Adobe Illustrator File
+
+- extension: aif
+  mimetype: audio/aiff
+  icon: 🎵
+  description: Audio Interchange File Format
+
+- extension: aifc
+  mimetype: audio/aiff
+  icon: 🎵
+  description: Audio Interchange File Format (Compressed)
+
+- extension: aiff
+  mimetype: audio/aiff
+  icon: 🎵
+  description: Audio Interchange File Format
+
+- extension: aim
+  mimetype: application/x-aim
+  icon: 💬
+  description: AOL Instant Messenger
+
+- extension: aip
+  mimetype: text/x-audiosoft-intra
+  icon: 🎵
+  description: Audiosoft Intra File
+
+- extension: ani
+  mimetype: application/x-navi-animation
+  icon: 🎞️
+  description: Animated Cursor
+
+- extension: aos
+  mimetype: application/x-nokia-9000-communicator-add-on-software
+  icon: 📱
+  description: Nokia 9000 Communicator Add-On Software
+
+- extension: aps
+  mimetype: application/mime
+  icon: 📄
+  description: MIME File
+
+- extension: arc
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Archive File
+
+- extension: arj
+  mimetype: application/arj
+  icon: 📦
+  description: ARJ Compressed Archive
+
+- extension: art
+  mimetype: image/x-jg
+  icon: 🖼️
+  description: Art Image File
+
+- extension: asf
+  mimetype: video/x-ms-asf
+  icon: 🎥
+  description: Advanced Systems Format File
+
+- extension: asm
+  mimetype: text/x-asm
+  icon: 💻
+  description: Assembly Language Source Code File
+
+- extension: asp
+  mimetype: text/asp
+  icon: 🌐
+  description: Active Server Page
+
+- extension: asx
+  mimetype: video/x-ms-asf
+  icon: 🎥
+  description: Microsoft ASF Redirector File
+
+- extension: au
+  mimetype: audio/basic
+  icon: 🎵
+  description: Audio File
+
+- extension: avi
+  mimetype: video/x-msvideo
+  icon: 🎥
+  description: Audio Video Interleave File
+
+- extension: avs
+  mimetype: video/avs-video
+  icon: 🎥
+  description: AVS Video File
+
+- extension: bcpio
+  mimetype: application/x-bcpio
+  icon: 📦
+  description: Binary CPIO Archive
+
+- extension: bin
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Binary File
+
+- extension: bm
+  mimetype: image/bmp
+  icon: 🖼️
+  description: Bitmap Image File
+
+- extension: bmp
+  mimetype: image/bmp
+  icon: 🖼️
+  description: Bitmap Image File
+
+- extension: boo
+  mimetype: application/book
+  icon: 📖
+  description: Book File
+
+- extension: book
+  mimetype: application/book
+  icon: 📖
+  description: Book File
+
+- extension: bozo
+  mimetype: application/x-bzip2
+  icon: 🗜️
+  description: Bzip2 Compressed File
+
+- extension: bsh
+  mimetype: application/x-bsh
+  icon: 📜
+  description: Shell Script
+
+- extension: bz
+  mimetype: application/x-bzip
+  icon: 🗜️
+  description: Bzip Compressed File
+
+- extension: bz2
+  mimetype: application/x-bzip2
+  icon: 🗜️
+  description: Bzip2 Compressed File
+
+- extension: c
+  mimetype: text/x-c
+  icon: 💻
+  description: C Source Code File
+
+- extension: c++
+  mimetype: text/x-c++
+  icon: 💻
+  description: C++ Source Code File
+
+- extension: cab
+  mimetype: application/vnd.ms-cab-compressed
+  icon: 🗜️
+  description: Cabinet File
+
+- extension: cat
+  mimetype: application/vnd.ms-pki.seccat
+  icon: 📄
+  description: Security Catalog File
+
+- extension: cc
+  mimetype: text/x-c
+  icon: 💻
+  description: C++ Source Code File
+
+- extension: cdf
+  mimetype: application/x-cdf
+  icon: 📄
+  description: Channel Definition Format
+
+- extension: cer
+  mimetype: application/pkix-cert
+  icon: 🔏
+  description: Internet Security Certificate
+
+- extension: cgm
+  mimetype: image/cgm
+  icon: 🖼️
+  description: Computer Graphics Metafile
+
+- extension: class
+  mimetype: application/java
+  icon: ☕
+  description: Java Class File
+
+- extension: com
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Command File
+
+- extension: conf
+  mimetype: text/plain
+  icon: 📄
+  description: Configuration File
+
+- extension: cpp
+  mimetype: text/x-c
+  icon: 💻
+  description:
+
+- extension: cpt
+  mimetype: application/mac-compactpro
+  icon: 🗜️
+  description: Mac CompactPro Archive
+
+- extension: crl
+  mimetype: application/pkix-crl
+  icon: 📜
+  description: Certificate Revocation List
+
+- extension: crt
+  mimetype: application/x-x509-ca-cert
+  icon: 🔏
+  description: CA Certificate File
+
+- extension: csh
+  mimetype: application/x-csh
+  icon: 🖥️
+  description: C Shell Script
+
+- extension: css
+  mimetype: text/css
+  icon: 🎨
+  description: Cascading Style Sheets
+
+- extension: csv
+  mimetype: text/csv
+  icon: 📄
+  description: Comma-Separated Values
+
+- extension: cxx
+  mimetype: text/x-c
+  icon: 💻
+  description: C++ Source Code File
+
+- extension: dcr
+  mimetype: application/x-director
+  icon: 🎬
+  description: Adobe Director File
+
+- extension: deepv
+  mimetype: application/x-deepv
+  icon: 🌊
+  description: Deep View File
+
+- extension: dif
+  mimetype: video/x-dv
+  icon: 🎥
+  description: Digital Video File
+
+- extension: dir
+  mimetype: application/x-director
+  icon: 🎬
+  description: Adobe Director File
+
+- extension: dl
+  mimetype: video/dl
+  icon: 🎥
+  description: DL Video File
+
+- extension: doc
+  mimetype: application/msword
+  icon: 📄
+  description: Microsoft Word Document
+
+- extension: dot
+  mimetype: application/msword
+  icon: 📄
+  description: Microsoft Word Template
+
+- extension: dp
+  mimetype: application/commonground
+  icon: 🌐
+  description: Common Ground Digital Paper
+
+- extension: drw
+  mimetype: application/drafting
+  icon: 🖼️
+  description: CAD Drawing File
+
+- extension: dump
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Memory Dump File
+
+- extension: dv
+  mimetype: video/x-dv
+  icon: 🎥
+  description: Digital Video File
+
+- extension: dvi
+  mimetype: application/x-dvi
+  icon: 📄
+  description: Device Independent File Format
+
+- extension: dwf
+  mimetype: model/vnd.dwf
+  icon: 🏗️
+  description: Design Web Format
+
+- extension: dwg
+  mimetype: image/vnd.dwg
+  icon: 🏗️
+  description: AutoCAD Drawing Database File
+
+- extension: dxf
+  mimetype: image/vnd.dxf
+  icon: 🏗️
+  description: AutoCAD Drawing Interchange Format
+
+- extension: dxr
+  mimetype: application/x-director
+  icon: 🎬
+  description: Adobe Director Movie
+
+- extension: el
+  mimetype: text/x-script.elisp
+  icon: 📜
+  description: Emacs Lisp Code File
+
+- extension: elc
+  mimetype: application/x-elc
+  icon: 📜
+  description: Emacs Lisp Compiled File
+
+- extension: env
+  mimetype: application/x-envoy
+  icon: 📄
+  description: WordPerfect Environment File
+
+- extension: eps
+  mimetype: application/postscript
+  icon: 🖼️
+  description: Encapsulated PostScript File
+
+- extension: es
+  mimetype: application/x-esrehber
+  icon: 📄
+  description: Esrehber File
+
+- extension: etx
+  mimetype: text/x-setext
+  icon: 📄
+  description: Setext Structure Enhanced Text
+
+- extension: evy
+  mimetype: application/envoy
+  icon: 📄
+  description: Envoy File
+
+- extension: exe
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Executable File
+
+- extension: f
+  mimetype: text/x-fortran
+  icon: 📜
+  description: Fortran Source Code
+
+- extension: f77
+  mimetype: text/x-fortran
+  icon: 📜
+  description: Fortran 77 Source Code
+
+- extension: f90
+  mimetype: text/x-fortran
+  icon: 📜
+  description: Fortran 90 Source Code
+
+- extension: fdf
+  mimetype: application/vnd.fdf
+  icon: 📄
+  description: Acrobat Forms Data Format
+
+- extension: fli
+  mimetype: video/x-fli
+  icon: 🎥
+  description: FLIC Animation File
+
+- extension: flo
+  mimetype: image/florian
+  icon: 🖼️
+  description: Florian Image
+
+- extension: flx
+  mimetype: text/vnd.fmi.flexstor
+  icon: 📄
+  description: Flexstor File
+
+- extension: fmf
+  mimetype: video/x-atomic3d-feature
+  icon: 🎥
+  description: Atomic3D Feature File
+
+- extension: for
+  mimetype: text/x-fortran
+  icon: 📜
+  description: Fortran Source Code
+
+- extension: fpx
+  mimetype: image/vnd.fpx
+  icon: 🖼️
+  description: FlashPix Bitmap Image
+
+- extension: g
+  mimetype: text/plain
+  icon: 📄
+  description: ASCII Text File
+
+- extension: g3
+  mimetype: image/g3fax
+  icon: 🖼️
+  description: Group 3 Fax Image
+
+- extension: gif
+  mimetype: image/gif
+  icon: 🖼️
+  description: Graphics Interchange Format
+
+- extension: gl
+  mimetype: video/gl
+  icon: 🎥
+  description: GL Video File
+
+- extension: gsd
+  mimetype: audio/x-gsm
+  icon: 🎵
+  description: GSM Audio File
+
+- extension: gsm
+  mimetype: audio/x-gsm
+  icon: 🎵
+  description: GSM Audio File
+
+- extension: gsp
+  mimetype: application/x-gsp
+  icon: 📄
+  description: GSP File
+
+- extension: gss
+  mimetype: application/x-gss
+  icon: 📄
+  description: GSS File
+
+- extension: gtar
+  mimetype: application/x-gtar
+  icon: 🗜️
+  description: GNU Tar Archive
+
+- extension: h
+  mimetype: text/x-c
+  icon: 💻
+  description: C Source Code Header File
+
+- extension: hdp
+  mimetype: application/x-windows-hdp
+  icon: 📄
+  description: Windows Help File
+
+- extension: htm
+  mimetype: text/html
+  icon: 🌐
+  description: Hypertext Markup Language (HTML)
+
+- extension: html
+  mimetype: text/html
+  icon: 🌐
+  description: Hypertext Markup Language (HTML)
+
+- extension: hqx
+  mimetype: application/mac-binhex40
+  icon: 🗜️
+  description: BinHex Encoded File
+
+- extension: hrz
+  mimetype: application/x-hrz
+  icon: 🗜️
+  description: UNIX compressed file
+
+- extension: htc
+  mimetype: text/x-component
+  icon: 🖥️
+  description: HTML Component File
+
+- extension: htmx
+  mimetype: text/html
+  icon: 🌐
+  description: Hypertext Markup Language (HTML) Extended
+
+- extension: ice
+  mimetype: x-conference/x-cooltalk
+  icon: 💬
+  description: CoolTalk File
+
+- extension: ico
+  mimetype: image/vnd.microsoft.icon
+  icon: 🖼️
+  description: Icon Image File
+
+- extension: ics
+  mimetype: text/calendar
+  icon: 📅
+  description: iCalendar File
+
+- extension: idl
+  mimetype: text/x-idl
+  icon: 📄
+  description: IDL (Interface Definition Language) File
+
+- extension: igs
+  mimetype: model/iges
+  icon: 🏗️
+  description: Initial Graphics Exchange Specification (IGES)
+
+- extension: iges
+  mimetype: model/iges
+  icon: 🏗️
+  description: Initial Graphics Exchange Specification (IGES)
+
+- extension: ind
+  mimetype: application/indesign
+  icon: 📄
+  description: Adobe InDesign Document
+
+- extension: ini
+  mimetype: text/plain
+  icon: 📄
+  description: Initialization File
+
+- extension: ins
+  mimetype: application/x-texinfo
+  icon: 📄
+  description: Texinfo File
+
+- extension: iso
+  mimetype: application/x-iso9660-image
+  icon: 💿
+  description: ISO Disc Image
+
+- extension: isp
+  mimetype: text/x-isp
+  icon: 💻
+  description: Internet Service Provider Script
+
+- extension: jar
+  mimetype: application/java-archive
+  icon: ☕
+  description: Java Archive
+
+- extension: java
+  mimetype: application/java
+  icon: ☕
+  description: Java Source Code
+
+- extension: jnlp
+  mimetype: application/x-java-jnlp-file
+  icon: ☕
+  description: Java Network Launch Protocol File
+
+- extension: jp2
+  mimetype: image/jp2
+  icon: 🖼️
+  description: JPEG 2000 Image
+
+- extension: jpe
+  mimetype: image/jpeg
+  icon: 🖼️
+  description: JPEG Image File
+
+- extension: jpeg
+  mimetype: image/jpeg
+  icon: 🖼️
+  description: JPEG Image File
+
+- extension: jpf
+  mimetype: image/jpx
+  icon: 🖼️
+  description: JPEG 2000 Image
+
+- extension: jpx
+  mimetype: image/jpx
+  icon: 🖼️
+  description: JPEG 2000 Image
+
+- extension: js
+  mimetype: text/javascript
+  icon: 📜
+  description: JavaScript File
+
+- extension: json
+  mimetype: application/json
+  icon: 🔣
+  description: JavaScript Object Notation File
+
+- extension: jsp
+  mimetype: application/x-jsp
+  icon: 🌐
+  description: Java Server Pages File
+
+- extension: jspf
+  mimetype: application/x-jsp
+  icon: 🌐
+  description: Java Server Pages Fragment
+
+- extension: jtd
+  mimetype: application/x-jtd
+  icon: 📄
+  description: Java Tree Data File
+
+- extension: jtp
+  mimetype: application/x-jtp
+  icon: 📄
+  description: Java Tree Panel File
+
+- extension: jsonld
+  mimetype: application/ld+json
+  icon: 🔣
+  description: JSON Linked Data File
+
+- extension: jsx
+  mimetype: text/jsx
+  icon: 📜
+  description: JavaScript XML
+
+- extension: jsxbin
+  mimetype: application/x-javascript
+  icon: 📜
+  description: Binary JavaScript File
+
+- extension: kdb
+  mimetype: application/x-kdb
+  icon: 🔒
+  description: KeePass Database File
+
+- extension: kdc
+  mimetype: image/x-kdc
+  icon: 🖼️
+  description: KDE Image File
+
+- extension: kexi
+  mimetype: application/vnd.kde.kexi
+  icon: 🖥️
+  description: Kexi Database File
+
+- extension: key
+  mimetype: application/x-keynote
+  icon: 📝
+  description: Keynote Presentation File
+
+- extension: kml
+  mimetype: application/vnd.google-earth.kml+xml
+  icon: 🗺️
+  description: Keyhole Markup Language File
+
+- extension: kmz
+  mimetype: application/vnd.google-earth.kmz
+  icon: 🗺️
+  description: Compressed KML File
+
+- extension: knm
+  mimetype: application/x-knm
+  icon: 📂
+  description: Knowledge Map File
+
+- extension: kob
+  mimetype: application/x-kob
+  icon: 📂
+  description: Knowledge Object File
+
+- extension: kpg
+  mimetype: application/x-kpg
+  icon: 🖼️
+  description: KPlus Gnome Background File
+
+- extension: krw
+  mimetype: application/x-krw
+  icon: 📄
+  description: KRow File
+
+- extension: kvs
+  mimetype: application/x-kvs
+  icon: 📄
+  description: KVS File
+
+- extension: kdbx
+  mimetype: application/x-keepass2
+  icon: 🔒
+  description: KeePass 2 Database File
+
+- extension: l
+  mimetype: text/x-lisp
+  icon: 📜
+  description: Lisp Source Code
+
+- extension: latex
+  mimetype: application/x-latex
+  icon: 📄
+  description: LaTeX Document
+
+- extension: ldb
+  mimetype: application/x-ldb
+  icon: 📄
+  description: Live Data Base File
+
+- extension: les
+  mimetype: text/x-lex
+  icon: 📄
+  description: Lex Source File
+
+- extension: lex
+  mimetype: text/x-lex
+  icon: 📄
+  description: Lex Source File
+
+- extension: lha
+  mimetype: application/octet-stream
+  icon: 🗜️
+  description: LHA Compressed Archive
+
+- extension: lhs
+  mimetype: text/x-literate-haskell
+  icon: 📜
+  description: Literate Haskell Source Code
+
+- extension: lib
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Static Library File
+
+- extension: lig
+  mimetype: application/x-ligo
+  icon: 📄
+  description: Ligo Source File
+
+- extension: lit
+  mimetype: application/x-ms-reader
+  icon: 📚
+  description: Microsoft Reader eBook File
+
+- extension: log
+  mimetype: text/plain
+  icon: 📄
+  description: Log File
+
+- extension: ltc
+  mimetype: application/x-ltc
+  icon: 📄
+  description: LTC Document File
+
+- extension: lwp
+  mimetype: application/x-lwp
+  icon: 📄
+  description: Lotus Word Pro Document
+
+- extension: m
+  mimetype: text/x-matlab
+  icon: 📊
+  description: MATLAB Script
+
+- extension: m4a
+  mimetype: audio/mp4
+  icon: 🎵
+  description: MPEG-4 Audio File
+
+- extension: m4v
+  mimetype: video/x-m4v
+  icon: 🎥
+  description: MPEG-4 Video File
+
+- extension: mag
+  mimetype: image/mag
+  icon: 🖼️
+  description: Mag Image File
+
+- extension: man
+  mimetype: text/troff
+  icon: 📜
+  description: Manual Page
+
+- extension: map
+  mimetype: application/x-tiled-map
+  icon: 🗺️
+  description: Map File (for games)
+
+- extension: markdown
+  mimetype: text/markdown
+  icon: 📜
+  description: Markdown File
+
+- extension: mathml
+  mimetype: application/mathml+xml
+  icon: 📐
+  description: Mathematical Markup Language File
+
+- extension: md
+  mimetype: text/markdown
+  icon: 📜
+  description: Markdown File
+
+- extension: me
+  mimetype: text/troff
+  icon: 📜
+  description: Troff Me Macro File
+
+- extension: mif
+  mimetype: application/x-mif
+  icon: 📄
+  description: FrameMaker Interchange Format File
+
+- extension: mim
+  mimetype: application/x-mimearchive
+  icon: 📂
+  description: MIME Archive
+
+- extension: midi
+  mimetype: audio/midi
+  icon: 🎵
+  description: Musical Instrument Digital Interface (MIDI) File
+
+- extension: mif
+  mimetype: application/x-mif
+  icon: 📄
+  description: FrameMaker Interchange File
+
+- extension: mkv
+  mimetype: video/x-matroska
+  icon: 🎥
+  description: Matroska Video File
+
+- extension: mm
+  mimetype: application/x-mmap
+  icon: 📄
+  description: Macromedia Authorware File
+
+- extension: mod
+  mimetype: audio/mod
+  icon: 🎵
+  description: Module Audio File
+
+- extension: mobi
+  mimetype: application/x-mobipocket-ebook
+  icon: 📚
+  description: Mobi eBook Format
+
+- extension: mpg
+  mimetype: video/mpeg
+  icon: 🎥
+  description: MPEG Video File
+
+- extension: mp2
+  mimetype: audio/mpeg
+  icon: 🎵
+  description: MPEG Audio File
+
+- extension: mp3
+  mimetype: audio/mpeg
+  icon: 🎵
+  description: MP3 Audio File
+
+- extension: mp4
+  mimetype: video/mp4
+  icon: 🎥
+  description: MP4 Video File
+
+- extension: mp4v
+  mimetype: video/mp4
+  icon: 🎥
+  description: MPEG-4 Video File
+
+- extension: mpp
+  mimetype: application/vnd.ms-project
+  icon: 📊
+  description: Microsoft Project File
+
+- extension: msg
+  mimetype: application/vnd.ms-outlook
+  icon: 📧
+  description: Microsoft Outlook Email File
+
+- extension: ms
+  mimetype: text/troff
+  icon: 📜
+  description: Troff File
+
+- extension: msc
+  mimetype: application/octet-stream
+  icon: 💾
+  description: Microsoft Script Component File
+
+- extension: msh
+  mimetype: text/plain
+  icon: 📄
+  description: MSH Format File
+
+- extension: mswmm
+  mimetype: application/x-ms-wmm
+  icon: 🎞️
+  description: Windows Movie Maker Project File
+
+- extension: mtz
+  mimetype: application/x-mtz
+  icon: 📦
+  description: MTZ Archive File
+
+- extension: muz
+  mimetype: audio/muz
+  icon: 🎵
+  description: Music File Format
+
+- extension: na
+  mimetype: application/x-unknown
+  icon: 📄
+  description: Unknown Data File
+
+- extension: nas
+  mimetype: audio/x-nas
+  icon: 🎵
+  description: Network Audio System File
+
+- extension: nb
+  mimetype: application/x-netbeans
+  icon: 🛠️
+  description: NetBeans Project File
+
+- extension: nbm
+  mimetype: application/x-netbeans-module
+  icon: 🛠️
+  description: NetBeans Module File
+
+- extension: nfo
+  mimetype: text/plain
+  icon: 📄
+  description: Information File
+
+- extension: nsa
+  mimetype: application/octet-stream
+  icon: 📦
+  description: NSA Data File
+
+- extension: nsf
+  mimetype: application/vnd.lotus-notes
+  icon: 📧
+  description: Lotus Notes Data File
+
+- extension: ntf
+  mimetype: application/vnd.lotus-notes
+  icon: 📧
+  description: Lotus Notes Template
+
+- extension: obj
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Object File (compiled code)
+
+- extension: oda
+  mimetype: application/oda
+  icon: 📄
+  description: Open Document Architecture File
+
+- extension: ogg
+  mimetype: application/ogg
+  icon: 🎵
+  description: Ogg Audio File
+
+- extension: ogv
+  mimetype: video/ogg
+  icon: 🎥
+  description: Ogg Video File
+
+- extension: opus
+  mimetype: audio/opus
+  icon: 🎵
+  description: Opus Audio File
+
+- extension: otf
+  mimetype: font/otf
+  icon: 🔤
+  description: OpenType Font
+
+- extension: ott
+  mimetype: application/vnd.oasis.opendocument.text-template
+  icon: 📄
+  description: OpenDocument Text Template
+
+- extension: ovf
+  mimetype: application/x-ovf
+  icon: 📦
+  description: Open Virtualization Format File
+
+- extension: ovr
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Virtual Machine File
+
+- extension: pkg
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Package File
+
+- extension: pl
+  mimetype: text/x-perl
+  icon: 🐍
+  description: Perl Script File
+
+- extension: plist
+  mimetype: application/x-plist
+  icon: 📄
+  description: Property List File (macOS)
+
+- extension: pm
+  mimetype: text/x-perl
+  icon: 🐍
+  description: Perl Module File
+
+- extension: pmg
+  mimetype: application/x-pmg
+  icon: 📄
+  description: Perl Graphics File
+
+- extension: pmd
+  mimetype: application/x-pmd
+  icon: 📄
+  description: Prime 3D Model File
+
+- extension: pml
+  mimetype: application/x-pml
+  icon: 📄
+  description: Mathematica Package File
+
+- extension: pmx
+  mimetype: application/x-pmx
+  icon: 📄
+  description: PMX Model File
+
+- extension: png
+  mimetype: image/png
+  icon: 🖼️
+  description: Portable Network Graphics Image
+
+- extension: pnm
+  mimetype: image/x-portable-anymap
+  icon: 🖼️
+  description: Portable Anymap Format
+
+- extension: pps
+  mimetype: application/vnd.ms-powerpoint
+  icon: 📽️
+  description: PowerPoint Slideshow
+
+- extension: ppt
+  mimetype: application/vnd.ms-powerpoint
+  icon: 📽️
+  description: PowerPoint Presentation
+
+- extension: pptx
+  mimetype: application/vnd.openxmlformats-officedocument.presentationml.presentation
+  icon: 📽️
+  description: PowerPoint Presentation (OpenXML)
+
+- extension: ps
+  mimetype: application/postscript
+  icon: 🖼️
+  description: PostScript File
+
+- extension: psd
+  mimetype: image/vnd.adobe.photoshop
+  icon: 🖼️
+  description: Adobe Photoshop Document
+
+- extension: psp
+  mimetype: application/x-psp
+  icon: 🖼️
+  description: Paint Shop Pro Image File
+
+- extension: py
+  mimetype: text/x-python
+  icon: 🐍
+  description: Python Script
+
+- extension: qt
+  mimetype: video/quicktime
+  icon: 🎥
+  description: QuickTime Video File
+
+- extension: qtm
+  mimetype: video/quicktime
+  icon: 🎥
+  description: QuickTime Movie File
+
+- extension: ra
+  mimetype: audio/x-realaudio
+  icon: 🎵
+  description: Real Audio File
+
+- extension: ram
+  mimetype: audio/x-pn-realaudio
+  icon: 🎵
+  description: RealAudio Media File
+
+- extension: rar
+  mimetype: application/vnd.rar
+  icon: 🗜️
+  description: RAR Archive File
+
+- extension: raw
+  mimetype: image/raw
+  icon: 🖼️
+  description: Raw Image Data
+
+- extension: rb
+  mimetype: application/x-ruby
+  icon: 💎
+  description: Ruby Script
+
+- extension: rdf
+  mimetype: application/rdf+xml
+  icon: 🔗
+  description: Resource Description Framework File
+
+- extension: rdoc
+  mimetype: text/x-ruby
+  icon: 📝
+  description: Ruby Documentation File
+
+- extension: rep
+  mimetype: application/x-representational
+  icon: 📄
+  description: Representational File Format
+
+- extension: rf
+  mimetype: application/x-rf
+  icon: 🖼️
+  description: Raster File
+
+- extension: rgb
+  mimetype: image/x-rgb
+  icon: 🖼️
+  description: RGB Image File
+
+- extension: rpm
+  mimetype: application/x-rpm
+  icon: 📦
+  description: RPM Package File
+
+- extension: rtf
+  mimetype: application/rtf
+  icon: 📄
+  description: Rich Text Format
+
+- extension: rut
+  mimetype: application/x-rut
+  icon: 📄
+  description: RUT Script File
+
+- extension: s
+  mimetype: text/x-asm
+  icon: 📜
+  description: Assembly Language Source Code
+
+- extension: s3m
+  mimetype: audio/s3m
+  icon: 🎵
+  description: S3M Module File
+
+- extension: sav
+  mimetype: application/x-spss-sav
+  icon: 📊
+  description: SPSS Data File
+
+- extension: sb
+  mimetype: application/x-sb
+  icon: 📦
+  description: Smalltalk Image File
+
+- extension: sc
+  mimetype: application/x-sc
+  icon: 💻
+  description: Scala Source File
+
+- extension: scd
+  mimetype: application/x-cd
+  icon: 📂
+  description: CD-ROM Information File
+
+- extension: scm
+  mimetype: application/x-scheme
+  icon: 📜
+  description: Scheme Source File
+
+- extension: scp
+  mimetype: application/x-scp
+  icon: 📜
+  description: SCP Script File
+
+- extension: sda
+  mimetype: application/vnd.stardivision.draw
+  icon: 🖼️
+  description: StarOffice Draw File
+
+- extension: sdc
+  mimetype: application/vnd.stardivision.calc
+  icon: 📊
+  description: StarOffice Calc File
+
+- extension: sds
+  mimetype: application/vnd.stardivision.chart
+  icon: 📊
+  description: StarOffice Chart File
+
+- extension: sdt
+  mimetype: application/vnd.stardivision.text
+  icon: 📄
+  description: StarOffice Text Document
+
+- extension: sed
+  mimetype: application/x-sed
+  icon: 📜
+  description: Sed Script File
+
+- extension: sgf
+  mimetype: application/x-sgf
+  icon: 🎲
+  description: Smart Game Format File
+
+- extension: sh
+  mimetype: application/x-sh
+  icon: 📜
+  description: Shell Script File
+
+- extension: shar
+  mimetype: application/x-shar
+  icon: 🗜️
+  description: Shell Archive File
+
+- extension: sid
+  mimetype: audio/x-sid
+  icon: 🎵
+  description: Commodore 64 SID Audio File
+
+- extension: skp
+  mimetype: application/vnd.sketchup.skp
+  icon: 🏗️
+  description: SketchUp Model File
+
+- extension: skt
+  mimetype: application/vnd.sketchup.skt
+  icon: 🏗️
+  description: SketchUp Template File
+
+- extension: smd
+  mimetype: application/x-smd
+  icon: 🎞️
+  description: 3D Studio Max File
+
+- extension: smi
+  mimetype: application/smil
+  icon: 🎥
+  description: Synchronized Multimedia Integration Language File
+
+- extension: smil
+  mimetype: application/smil
+  icon: 🎥
+  description: Synchronized Multimedia Integration Language File
+
+- extension: snd
+  mimetype: audio/basic
+  icon: 🎵
+  description: Sound File (Basic Audio)
+
+- extension: so
+  mimetype: application/octet-stream
+  icon: 📦
+  description: Shared Object File (Unix)
+
+- extension: spf
+  mimetype: application/x-spf
+  icon: 📄
+  description: SPF File (Structured Prediction Format)
+
+- extension: sql
+  mimetype: application/sql
+  icon: 🗄️
+  description: Structured Query Language (SQL) File
+
+- extension: srt
+  mimetype: application/x-subrip
+  icon: 🎬
+  description: SubRip Subtitle File
+
+- extension: ss
+  mimetype: text/x-script.ss
+  icon: 📜
+  description: Scheme Source Script File
+
+- extension: ssf
+  mimetype: application/x-ssf
+  icon: 📄
+  description: Simple Sequence Format File
+
+- extension: swf
+  mimetype: application/x-shockwave-flash
+  icon: 🎬
+  description: Shockwave Flash File
+
+- extension: sz
+  mimetype: application/x-sz
+  icon: 🗜️
+  description: Sz Compressed Archive
+
+- extension: t
+  mimetype: text/troff
+  icon: 📜
+  description: Troff Source File
+
+- extension: tar
+  mimetype: application/x-tar
+  icon: 🗜️
+  description: Tape Archive File
+
+- extension: tcl
+  mimetype: application/x-tcl
+  icon: 📜
+  description: Tcl Script File
+
+- extension: tex
+  mimetype: application/x-tex
+  icon: 📄
+  description: TeX Document Source File
+
+- extension: texi
+  mimetype: application/x-texinfo
+  icon: 📄
+  description: Texinfo Document Source File
+
+- extension: texinfo
+  mimetype: application/x-texinfo
+  icon: 📄
+  description: Texinfo Document Source File
+
+- extension: tif
+  mimetype: image/tiff
+  icon: 🖼️
+  description: Tagged Image File Format
+
+- extension: tiff
+  mimetype: image/tiff
+  icon: 🖼️
+  description: Tagged Image File Format
+
+- extension: tk
+  mimetype: application/x-tk
+  icon: 📜
+  description: Tk Script File
+
+- extension: toc
+  mimetype: application/x-toc
+  icon: 📄
+  description: Table of Contents File
+
+- extension: tr
+  mimetype: text/troff
+  icon: 📜
+  description: Troff Source File
+
+- extension: ts
+  mimetype: video/mp2t
+  icon: 🎥
+  description: MPEG Transport Stream
+
+- extension: tsv
+  mimetype: text/tab-separated-values
+  icon: 📑
+  description: Tab-Separated Values File
+
+- extension: txt
+  mimetype: text/plain
+  icon: 📄
+  description: Plain Text File
+
+- extension: uue
+  mimetype: application/x-uuencode
+  icon: 📦
+  description: Uuencoded File
+
+- extension: vcf
+  mimetype: text/x-vcard
+  icon: 📇
+  description: vCard File
+
+- extension: vdi
+  mimetype: application/x-virtualbox-vdi
+  icon: 💻
+  description: VirtualBox Virtual Disk Image
+
+- extension: vhdl
+  mimetype: text/x-vhdl
+  icon: 💻
+  description: VHDL Source Code File
+
+- extension: vmdk
+  mimetype: application/x-vmware-vmdk
+  icon: 💻
+  description: VMware Virtual Machine Disk File
+
+- extension: vob
+  mimetype: video/x-ms-vob
+  icon: 🎥
+  description: Video Object File (DVD)
+
+- extension: vox
+  mimetype: audio/voxware
+  icon: 🎵
+  description: Voxware Audio File
+
+- extension: vrml
+  mimetype: model/vrml
+  icon: 🌐
+  description: Virtual Reality Modeling Language File
+
+- extension: vsm
+  mimetype: application/x-vsm
+  icon: 📄
+  description: Visual SourceSafe File
+
+- extension: vsp
+  mimetype: application/x-vsp
+  icon: 📄
+  description: Visual SourceSafe Project File
+
+- extension: vsd
+  mimetype: application/vnd.visio
+  icon: 📊
+  description: Microsoft Visio Drawing File
+
+- extension: vss
+  mimetype: application/vnd.visio
+  icon: 📊
+  description: Microsoft Visio Stencil File
+
+- extension: vst
+  mimetype: application/vnd.visio
+  icon: 📊
+  description: Microsoft Visio Template File
+
+- extension: vsw
+  mimetype: application/vnd.visio
+  icon: 📊
+  description: Microsoft Visio Stencil File
+
+- extension: vtx
+  mimetype: application/vnd.visio
+  icon: 📊
+  description: Microsoft Visio Template File
+
+- extension: wav
+  mimetype: audio/wav
+  icon: 🎵
+  description: Waveform Audio File
+
+- extension: wbmp
+  mimetype: image/vnd.wap.wbmp
+  icon: 🖼️
+  description: Wireless Bitmap File
+
+- extension: wdc
+  mimetype: application/x-wdc
+  icon: 📄
+  description: Windows Document Cache File
+
+- extension: webm
+  mimetype: video/webm
+  icon: 🎥
+  description: WebM Video File
+
+- extension: webp
+  mimetype: image/webp
+  icon: 🖼️
+  description: WebP Image Format
+
+- extension: wma
+  mimetype: audio/x-ms-wma
+  icon: 🎵
+  description: Windows Media Audio File
+
+- extension: wmv
+  mimetype: video/x-ms-wmv
+  icon: 🎥
+  description: Windows Media Video File
+
+- extension: wpd
+  mimetype: application/vnd.wordperfect
+  icon: 📄
+  description: WordPerfect Document
+
+- extension: wps
+  mimetype: application/vnd.ms-works
+  icon: 📄
+  description: Microsoft Works Document
+
+- extension: wri
+  mimetype: application/mswrite
+  icon: 📄
+  description: Microsoft Write File
+
+- extension: wsdl
+  mimetype: application/wsdl+xml
+  icon: 📄
+  description: Web Services Description Language File
+
+- extension: x3d
+  mimetype: model/x3d+xml
+  icon: 🌐
+  description: X3D File (3D Model)
+
+- extension: xcf
+  mimetype: image/x-xcf
+  icon: 🖼️
+  description: GIMP Image File
+
+- extension: xhtml
+  mimetype: application/xhtml+xml
+  icon: 🌐
+  description: XHTML File (Extensible HTML)
+
+- extension: xls
+  mimetype: application/vnd.ms-excel
+  icon: 📊
+  description: Microsoft Excel Spreadsheet
+
+- extension: xlsx
+  mimetype: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  icon: 📊
+  description: Microsoft Excel Spreadsheet (OpenXML)
+
+- extension: xlsm
+  mimetype: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  icon: 📊
+  description: Microsoft Excel Spreadsheet with Macros (OpenXML)
+
+- extension: xml
+  mimetype: application/xml
+  icon: 📄
+  description: Extensible Markup Language (XML) File
+
+- extension: xpi
+  mimetype: application/x-xpinstall
+  icon: 📦
+  description: Mozilla Firefox Add-On File
+
+- extension: xps
+  mimetype: application/vnd.ms-xpsdocument
+  icon: 📄
+  description: XML Paper Specification File
+
+- extension: xsd
+  mimetype: application/xml
+  icon: 📄
+  description: XML Schema Definition File
+
+- extension: xsl
+  mimetype: application/xslt+xml
+  icon: 📄
+  description: Extensible Stylesheet Language Transformation (XSLT) File
+
+- extension: xslt
+  mimetype: application/xslt+xml
+  icon: 📄
+  description: Extensible Stylesheet Language Transformation File
+
+- extension: yaml
+  mimetype: text/yaml
+  icon: 📜
+  description: YAML Ain't Markup Language File
+
+- extension: yml
+  mimetype: text/yaml
+  icon: 📜
+  description: YAML Ain't Markup Language File
+
+- extension: zip
+  mimetype: application/zip
+  icon: 🗜️
+  description: ZIP Archive File
+
+- extension: zlib
+  mimetype: application/x-zlib
+  icon: 🗜️
+  description: Zlib Compressed File
+
+- extension: zsh
+  mimetype: application/x-shellscript
+  icon: 📜
+  description: Zsh Shell Script
+
+- extension: 7z
+  mimetype: application/x-7z-compressed
+  icon: 🗜️
+  description: 7-Zip Compressed File
+
+- extension: ace
+  mimetype: application/x-ace-compressed
+  icon: 🗜️
+  description: ACE Compressed Archive
+
+- extension: arj
+  mimetype: application/arj
+  icon: 🗜️
+  description: ARJ Compressed Archive
+
+- extension: cab
+  mimetype: application/vnd.ms-cab-compressed
+  icon: 🗜️
+  description: Microsoft Cabinet File
+
+- extension: chm
+  mimetype: application/vnd.ms-htmlhelp
+  icon: 📚
+  description: Microsoft Compiled HTML Help File
+
+- extension: dmg
+  mimetype: application/x-apple-diskimage
+  icon: 💽
+  description: Apple Disk Image
+
+- extension: gz
+  mimetype: application/gzip
+  icon: 🗜️
+  description: Gzip Compressed Archive
+
+- extension: jar
+  mimetype: application/java-archive
+  icon: ☕
+  description: Java Archive
+
+- extension: lha
+  mimetype: application/octet-stream
+  icon: 🗜️
+  description: LHA Compressed Archive
+
+- extension: rar
+  mimetype: application/vnd.rar
+  icon: 🗜️
+  description: RAR Archive File
+
+- extension: tar
+  mimetype: application/x-tar
+  icon: 🗜️
+  description: Tape Archive File
+
+- extension: tbz2
+  mimetype: application/x-bzip2
+  icon: 🗜️
+  description: Bzip2 Compressed Tar File
+
+- extension: tgz
+  mimetype: application/gzip
+  icon: 🗜️
+  description: Gzip Compressed Tar File
+
+- extension: xz
+  mimetype: application/x-xz
+  icon: 🗜️
+  description: XZ Compressed File
+
+- extension: z
+  mimetype: application/x-compressed
+  icon: 🗜️
+  description: Compressed File (legacy format)
+
+- extension: zipx
+  mimetype: application/x-zip-compressed
+  icon: 🗜️
+  description: Extended ZIP Archive
