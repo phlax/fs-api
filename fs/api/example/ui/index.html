@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Yew App</title>
+  <link rel="modulepreload" href="/ui/fs_api_ui.js" crossorigin="anonymous" integrity="sha384-1nmA9/Mef374MX3Zk0pqZbmgsoHNSTM6IxDd75FBWJSAyGsRtpIDP++t51gxX0fq"><link rel="preload" href="/ui/fs_api_ui_bg.wasm" crossorigin="anonymous" integrity="sha384-EP9UfHH/GlFbau3ec0/2hpU89AxpYtpXRFFgNcPbCG9N6jKQEWAkMs77CMwj0uhu" as="fetch" type="application/wasm"></head>
+  <body>
+  
+<script type="module">
+import init, * as bindings from '/ui/fs_api_ui.js';
+const wasm = await init({ module_or_path: '/ui/fs_api_ui_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
